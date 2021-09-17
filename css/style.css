@@ -1,13 +1,15 @@
 @font-face {
   font-family: 'gothambold1';
-  src: url("./gothambold1.eot");
-  src: local("gothambold1"), url("./gothambold1.woff") format("woff"), url("./gothambold1.ttf") format("truetype");
+  src: local("gothambold1"), url(".fonts/gothambold1.eot") format(eot), url(".fonts/gothambold1.woff") format("woff"), url(".fonts/gothambold1.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'GothamBook';
-  src: url("./GothamBook.eot");
-  src: local("GothamBook"), url("./GothamBook.woff") format("woff"), url("./GothamBook.ttf") format("truetype");
+  src: local("GothamBook"), url(".fonts/GothamBook.eot") format(eot), url(".fonts/GothamBook.woff") format("woff"), url(".fonts/GothamBook.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 * {
@@ -15,5 +17,48 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  max-width: 1600px;
+  width: 100%;
+  height: auto;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.header__introd {
+  background-image: url(../img/bg.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: 50%;
+  padding: 55px calc(25vw - 200px);
+}
+
+.header__introd__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.label {
+  margin-right: 80px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icons__net {
+  margin-right: 20px;
+}
+
+.nav {
+  margin-top: 25px;
+}
+
+.nav__item {
+  margin-right: 60px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,45 @@
 @import "_font.scss";
+@import "_vars.scss";
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    max-width: 1600px;
+    width: 100%;
+    height: auto;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.header__introd {
+    background-image: url(../img/bg.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: 50%;
+    padding: 55px calc(25vw - 200px);
+    &__nav {
+         display: flex;
+    }
+}
+.label {
+    margin-right: 80px;
+}
+.icons {
+    display: flex;
+    &__net {
+        margin-right: 20px;
+    }
+   
+}
+.nav {
+    margin-top: 25px;
+        &__item {
+        margin-right: 60px;
+        font-family: $btn_font_family;
+        font-family: "GothamBook";
+        font-family: serif;
+
+    }
 }
