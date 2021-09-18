@@ -1,13 +1,27 @@
 @font-face {
   font-family: 'gothambold1';
-  src: local("gothambold1"), url(".fonts/gothambold1.eot") format(eot), url(".fonts/gothambold1.woff") format("woff"), url(".fonts/gothambold1.ttf") format("truetype");
+  src: local("gothambold1"), url("fonts/gothambold1.eot") format(eot), url("fonts/gothambold1.woff") format("woff"), url("fonts/gothambold1.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'GothamBook';
-  src: local("GothamBook"), url(".fonts/GothamBook.eot") format(eot), url(".fonts/GothamBook.woff") format("woff"), url(".fonts/GothamBook.ttf") format("truetype");
+  src: local("GothamBook"), url("fonts/GothamBook.eot") format(eot), url("fonts/GothamBook.woff") format("woff"), url("fonts/GothamBook.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gothambold1';
+  src: local("gothambold1"), url("fonts/gothambold1.eot") format(eot), url("fonts/gothambold1.woff") format("woff"), url("fonts/gothambold1.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamBook';
+  src: local("GothamBook"), url("fonts/GothamBook.eot") format(eot), url("fonts/GothamBook.woff") format("woff"), url("fonts/GothamBook.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -27,7 +41,7 @@ body {
 }
 
 .header__introd {
-  background-image: url(../img/bg.png);
+  background-image: url(../img/header/bg.png);
   height: 100vh;
   background-size: cover;
   background-position: 50%;
@@ -40,11 +54,31 @@ body {
   display: flex;
 }
 
+.header__introd__slider {
+  margin: 250px 0 200px;
+  text-align: center;
+}
+
+.header__introd__slider__title {
+  margin-bottom: 35px;
+  font-family: "gothambold1";
+  color: #fff;
+  font-size: 80px;
+}
+
+.header__introd__slider__text {
+  font-family: "GothamBook";
+  color: #fff;
+  font-size: 14px;
+  font-size: 18px;
+}
+
 .label {
   margin-right: 80px;
 }
 
 .icons {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,11 +88,33 @@ body {
   margin-right: 20px;
 }
 
-.nav {
+.navigaciya {
   margin-top: 25px;
 }
 
-.nav__item {
+.navigaciya__spicok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigaciya__spicok__item {
   margin-right: 60px;
+  font-family: "GothamBook";
+  color: #fff;
+  font-size: 14px;
+}
+
+.scroll {
+  text-align: center;
+}
+
+.main__part {
+  padding: 0 calc(25vw - 200px);
+}
+
+.wedo__title {
+  margin: 100px 0 100px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

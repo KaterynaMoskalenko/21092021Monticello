@@ -1,5 +1,6 @@
-@import "_font.scss";
-@import "_vars.scss";
+@import '_fonts.scss';
+@import '_vars.scss';
+@import '_mixin.scss';
 
 
 * {
@@ -12,9 +13,11 @@ body {
     width: 100%;
     height: auto;
     font-family: 'Josefin Sans', sans-serif;
+
+    // ====== HEADER ========
 }
 .header__introd {
-    background-image: url(../img/bg.png);
+    background-image: url(../img/header/bg.png);
     height: 100vh;
     background-size: cover;
     background-position: 50%;
@@ -22,24 +25,51 @@ body {
     &__nav {
          display: flex;
     }
+    &__slider {
+        margin: 250px 0 200px;
+        text-align: center;
+        &__title {
+            margin-bottom: 35px;
+            @include btnStyleBold($btn_font_family_bold);
+        }
+        &__text {
+            @include btnStyle($btn_font_family);
+            font-size: 18px;
+        }
+    }
 }
 .label {
     margin-right: 80px;
 }
 .icons {
+    margin-top: 10px;
     display: flex;
     &__net {
         margin-right: 20px;
     }
-   
 }
-.nav {
+.navigaciya {
     margin-top: 25px;
-        &__item {
+    &__spicok {
+        display: flex;
+            &__item {
         margin-right: 60px;
-        font-family: $btn_font_family;
-        font-family: "GothamBook";
-        font-family: serif;
+        @include btnStyle($btn_font_family);
+        }
+    }    
+}
+.scroll {
+    text-align: center;
+}
 
-    }
+// ======= MAIN =======
+.main__part {
+    padding: 0 calc(25vw - 200px);
+}
+
+// ====== WHAT WE DO =====
+
+.wedo__title {
+    margin: 100px 0 100px;
+    text-align: center;
 }

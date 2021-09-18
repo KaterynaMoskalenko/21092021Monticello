@@ -1,0 +1,14 @@
+@mixin btnStyle($btn_font_family) {
+    font-family: $btn_font_family;
+    color: #fff; 
+    font-size: 14px;
+  
+ }
+@mixin btnStyleBold($btn_font_family_bold) {
+    font-family: $btn_font_family_bold;
+    color: #fff; 
+    font-size: 80px;
+  
+ }
+
+
