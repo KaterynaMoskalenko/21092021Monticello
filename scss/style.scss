@@ -66,13 +66,18 @@ body {
 .main__part {
     // padding: 0 calc(25vw - 200px);
     &__wedoTitle,
-    &__newsTitle {
+    &__newsTitle,
+    &__galleryTitle {
         margin: 100px 0 100px;
         text-align: center;
         @include titleBold($btn_font_family_bold);  
     }
     &__newsTitle {
+        margin: 100px 0 50px;
         color: #fff;
+    }
+    &__galleryTitle {
+        color: #3a4d63;
     }
 }
 
@@ -150,24 +155,35 @@ body {
 // ========== NEWS ========
 .news {
     background-image: url(../img/news/bgnews.png);
-    height: 100vh;
+    height: auto;
     background-size: cover;
     background-position: 50%;
-    padding: 55px calc(25vw - 200px);
+    padding: 25px calc(15vw - 100px) 55px;
     &__content {
+        max-width: 310px;
+        width: 100%;
+        margin-right: 20px;
         display: flex;
         flex-direction: column;
         background-color: #fff;
-        flex-basis: 30%;
-        &__text{
-            padding: 20px;
+        &__photo {
+            width: 100%;
+            &__img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+          &__text{
+          padding: 20px;
         }
     }
 }
 .slider {
-    display: flex;
-    justify-content: space-between;
-}
+    max-width: 1180px;
+    width: 100%;
+    padding: 0 60px;
+    position: relative;
+  }
 .text {
     &__heading {
         padding-bottom: 20px;
@@ -196,4 +212,54 @@ body {
             color: #55b7ff;
         }
     }
+}
+//=====slider =====
+
+.slick-track {
+    display: flex;
+}
+.slick-list {
+    overflow: hidden;
+ }
+ // ======= stylling arrows =========
+ .slider .slick-arrow {
+     position: absolute;
+     top: 50%;
+     z-index: 10;
+     font-size: 0;
+     width: 30px;
+     height: 50px;
+    
+ }
+ .slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url('img/news/arrows/left.png') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url('img/svg/arrows/right.png') 0 0 / 100% no-repeat;
+}
+ .slick-dots {
+     margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .slick-dots li {
+    list-style: none;
+    margin: 0 10px;
+} 
+.slider .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+ }
+ .slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px solid #fff; 
+ } 
+ .slick-disabled {
+    opacity: 0.2;
 }
