@@ -12,7 +12,7 @@ body {
     max-width: 1600px;
     width: 100%;
     height: auto;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', 'Josefin Sans', sans-serif;
 
     // ====== HEADER ========
 }
@@ -64,12 +64,136 @@ body {
 
 // ======= MAIN =======
 .main__part {
-    padding: 0 calc(25vw - 200px);
+    // padding: 0 calc(25vw - 200px);
+    &__wedoTitle,
+    &__newsTitle {
+        margin: 100px 0 100px;
+        text-align: center;
+        @include titleBold($btn_font_family_bold);  
+    }
+    &__newsTitle {
+        color: #fff;
+    }
 }
 
 // ====== WHAT WE DO =====
 
-.wedo__title {
-    margin: 100px 0 100px;
-    text-align: center;
+.wedo {
+    &__trade {
+        margin-bottom: 130px;
+        display: flex;
+        position: relative;
+    }
+    &__commerce {
+        margin-bottom: 130px;
+        display: flex;
+        position: relative;
+    }
+    &__text {
+        margin-left: 75px;
+        &__heading {
+            margin-top: 40px;
+            @include btnStyleText($btn_font_family);
+        }
+        &__titleinside {
+            margin-top:20px;
+            @include titleBold ($btn_font_family_bold);
+        }
+        &__textinside {
+            margin: 20px 0 20px 0;
+            font-size: 16px;
+        }
+    }
+}
+.article {
+    width: 100%;
+    max-width: 460px;
+}
+.wedo__photoBlue {
+    width: 40%;
+    position: absolute;
+    top: -70px;
+    left: -120px;
+    z-index: -1;
+    &__blue {
+        object-fit: contain;
+        width: 100%;
+    }
+}   
+.wedo__photoPic {
+    width: 40%;
+    flex-basis: 50%;
+    &__picture {
+        object-fit: contain;
+        width: 100%;
+    }  
+} 
+.build {
+    margin-left: 145px;
+} 
+.wedo__photoP {
+    width: 40%;
+    position: absolute;
+    top: -70px;
+    right: -120px;
+    z-index: -1;
+    &__purple {
+        object-fit: contain;
+        width: 100%;
+    }
+}  
+.btn {
+    height: 50px;
+    width: 180px;
+}
+
+// ========== NEWS ========
+.news {
+    background-image: url(../img/news/bgnews.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: 50%;
+    padding: 55px calc(25vw - 200px);
+    &__content {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        flex-basis: 30%;
+        &__text{
+            padding: 20px;
+        }
+    }
+}
+.slider {
+    display: flex;
+    justify-content: space-between;
+}
+.text {
+    &__heading {
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        @include titleBold($btn_font_family_bold);
+        font-size: 22px;
+    }
+    &__text {
+        font-size: 18px;
+        color: #7b818a;
+    }
+}
+.person {
+    margin-top: 25px;
+    display: flex;
+    &__info {
+        margin: 5px 20px;
+        display: block;
+        @include btnStyleText($btn_font_family);
+        &__name {
+            font-size: 18px;
+        }
+        &__date {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #55b7ff;
+        }
+    }
 }

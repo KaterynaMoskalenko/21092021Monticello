@@ -2,13 +2,21 @@
     font-family: $btn_font_family;
     color: #fff; 
     font-size: 14px;
-  
- }
+  }
+@mixin btnStyleText($btn_font_family) {
+    font-family: $btn_font_family;
+    color: #000; 
+    font-size: 22px;
+  }
 @mixin btnStyleBold($btn_font_family_bold) {
     font-family: $btn_font_family_bold;
     color: #fff; 
     font-size: 80px;
-  
- }
+   }
+@mixin titleBold($btn_font_family_bold) {
+    font-family: $btn_font_family_bold;
+    color: #000; 
+    font-size: 42px;
+  }
 
 
