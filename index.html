@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
     <title>Monticello</title>
 </head>
@@ -13,10 +14,13 @@
     <header class="header__introd">
         <div class="header__introd__nav">
             <div class="label">
-                <img src="img/header/svg/mont.svg" alt="Monticello">
+                <img src="img/header/svg/mont.svg" alt="Monticello" class="Label1">
             </div>
             <nav class="navigaciya">
-                <ul class="navigaciya__spicok">
+                <input id="burg" type="checkbox" class="nav__burger">
+                <label class="nav__burger-img" for="burg">              
+                </label>
+                <ul class="navigaciya__spicok menu">
                     <li class="navigaciya__spicok__item">ABOUT US</li>
                     <li class="navigaciya__spicok__item">PROJECTS</li>
                     <li class="navigaciya__spicok__item">NEWS</li>
@@ -25,19 +29,25 @@
             </nav>
             <div class="icons">
                 <div class="icons__net">
-                    <img src="img/header/svg/fb.svg" alt="facebook" class="icons__net__fb">
+                    <a href="https://uk-ua.facebook.com" target="blank">
+                        <img src="img/header/svg/fb.svg" alt="facebook" class="icons__net__fb iconClick">
+                    </a>
                 </div>
                 <div class="icons__net">
-                    <img src="img/header/svg/twit.svg" alt="twitter" class="icons__net__twit">
+                    <a href="https://twitter.com" target="blank">
+                        <img src="img/header/svg/twit.svg" alt="twitter" class="icons__net__twit iconClick">
+                    </a>
                 </div>
                 <div class="icons__net">
-                    <img src="img/header/svg/instagram.svg" alt="instagram" class="icons__net__instagram">
+                    <a href="https://www.instagram.com/?hl=ru" target="blank">
+                        <img src="img/header/svg/instagram.svg" alt="instagram" class="icons__net__instagram iconClick">
+                    </a>
                 </div>
             </div>
         </div>
 
         <div class="header__introd__slider">
-            <h1 class="header__introd__slider__title">SIMPLE & MODERN</h1>
+            <h1 class="header__introd__slider__title _anim-items">SIMPLE & MODERN</h1>
             <span class="header__introd__slider__text"> WE MAKE THE WORLD'S BEAUTIFUL EVERY DAY </span>
         </div>
         <div class="scroll">
@@ -49,11 +59,13 @@
         <section class="main__part__wedo wedo">
             <h2 class="main__part__wedoTitle">WHAT WE DO</h2>
             <div class="wedo__trade">
-                <div class="wedo__photoBlue">
-                    <img src="img/wedo/blue.png" alt="blue" class="wedo__photoBlue__blue">
-                </div>
-                <div class="wedo__photoPic">
-                    <img src="img/wedo/kupol.png" alt="roof" class="wedo__photoPic__picture">
+                <div class="wedo__trade__wedoPic wedoPic">
+                    <div class="wedoPic__photoBlue">
+                        <img src="img/wedo/blue.png" alt="blue" class="wedoPic__photoBlue__blue">
+                    </div>
+                    <div class="wedoPic__photoPic">
+                        <img src="img/wedo/kupol.png" alt="roof" class="wedoPic__photoPic__picture">
+                    </div>
                 </div>
                 <article class="wedo__text article">
                     <h3 class="wedo__text__heading">ONE WORLD</h3>
@@ -72,13 +84,15 @@
                     <button class="btn bottom">MORE DETAILS</button>
                     <!-- // <map name=""></map> -->
                 </article>
-                <div class="wedo__photoPic build">
-                    <img src="img/wedo/building.png" alt="blue" class="wedo__photoPic__picture">
+                <div class="wedoPicBot">
+                    <div class="wedoPicBot__photoP">
+                        <img src="img/wedo/purple.png" alt="roof" class="wedoPicBot__photoP__purple">
+                    </div>
+                    <div class="wedoPicBot__photoPic">
+                        <img src="img/wedo/building.png" alt="blue" class="wedoPicBot__photoPic__picture">
+                    </div>
+                    
                 </div>
-                <div class="wedo__photoP">
-                    <img src="img/wedo/purple.png" alt="roof" class="wedo__photoP__purple">
-                </div>
-               
             </div>
         </section>
         <section class="main__part__news  news">
@@ -90,8 +104,8 @@
                         <img src="img/news/frame_mancke.png" alt="Lauren Mancke" class="news__content__photo__img">
                     </div>
                     <div class="news__content__text text">
-                        <h3 class="text__heading">See The Unmatched Beauty Of The Great. </h3>
-                        <span class="text__text">Free directories: directories are perfect for customers that are... searching for</span> 
+                        <h3 class="text__heading">See The Unmatched Beauty Of The Great.Lake/ </h3>
+                        <span class="text__text">Free directories: directories are perfect for customers that are other... searching for</span> 
                         <div class="text__person person">
                             <div class="person__photo">
                                 <img src="img/news/photos.png" alt="Lauren Mancke" class="person__photoF">
@@ -143,7 +157,7 @@
                         <img src="img/news/frame_mancke.png" alt="Lauren Mancke" class="news__content__photo__img">
                     </div>
                     <div class="news__content__text text">
-                        <h3 class="text__heading">See The Unmatched Beauty Of The Great. </h3>
+                        <h3 class="text__heading">See The Unmatched Beauty Of The Great. Lake </h3>
                         <span class="text__text">Free directories: directories are perfect for customers that are... searching for</span> 
                         <div class="text__person person">
                             <div class="person__photo">
@@ -193,18 +207,63 @@
                 </article>
             </div>  
         </section>
-        <section class="main__part__gallery gallery">
+        <section class="main__part__gallery">
             <h2 class="main__part__galleryTitle">GALLERY</h2>
-            <div class="gallery__img">
-            
-
+            <div class="gallery">
+                <div class="gallery__imgRight">
+                    <img src="img/gallery/scott.png" alt="building" class="gallery__imgRight__image">
+                </div>
+                <div class="gallery__imgLeft">
+                    <div class="gallery__imgLeft__pic pic pic1">
+                        <div class="pic__photo">
+                            <img src="img/gallery/build.png" alt="building" class="pic__photo__small">
+                        </div>
+                        <div class="pic__photo">
+                            <img src="img/gallery/buildi.png" alt="building" class="pic__photo__small">
+                        </div>
+                    </div>
+                    <div class="gallery__imgLeft__pic pic">
+                        <div class="pic__photo">
+                            <img src="img/gallery/buildin.png" alt="building" class="pic__photo__small">
+                        </div>
+                        <div class="pic__photo">
+                            <img src="img/gallery/building.png" alt="building" class="pic__photo__small">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="gallery__img"></div>
+            <div class="button">
+                 <button class="btn top">SEE MORE </button>
+             </div>
         </section>
         <section class="main__part__contacts">
             <footer class="contacts">
-                <div></div>
-                <div></div>
+                <div>
+                    <div class="label">
+                        <img src="img/header/svg/mont.svg" alt="Monticello" class="Label1">
+                    </div>
+                    <div class="contacts__text">
+                        <p class="contacts__text__length">Copyrights © 2017 Monticello Group</p>
+                        <p class="contacts__text__length bord">Made with by Ga Huy</p>
+                    </div>
+                </div>
+                <div class="icons">
+                    <div class="icons__net">
+                        <a href="https://uk-ua.facebook.com" target="blank">
+                            <img src="img/header/svg/fb.svg" alt="facebook" class="icons__net__fb iconClick">
+                        </a>
+                    </div>
+                    <div class="icons__net">
+                        <a href="https://twitter.com" target="blank">
+                            <img src="img/header/svg/twit.svg" alt="twitter" class="icons__net__twit iconClick">
+                        </a>
+                    </div>
+                    <div class="icons__net">
+                        <a href="https://www.instagram.com/?hl=ru" target="blank">
+                            <img src="img/header/svg/instagram.svg" alt="instagram" class="icons__net__instagram iconClick">
+                        </a>
+                    </div>
+                </div>
             </footer>
         </section>
     </main>

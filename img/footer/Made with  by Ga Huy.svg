@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="166" height="13" viewBox="0 0 166 13">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 14px;
+        fill: #fff;
+        font-family: Gotham;
+      }
+
+      .cls-2 {
+        font-family: FontAwesome;
+      }
+    </style>
+  </defs>
+  <text id="Made_with_by_Ga_Huy" data-name="Made with  by Ga Huy" class="cls-1" x="-0.578" y="-1.5">Made with <tspan class="cls-2"></tspan> by Ga Huy</text>
+</svg>
