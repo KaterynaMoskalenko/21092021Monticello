@@ -73,10 +73,16 @@ $(document).ready(function(){
   })
 
 
-  const anchors = document.querySelectorAll('.navigaciya__spicok__item');
+//   const anchors = document.querySelectorAll('.navigaciya__spicok__item');
 
-for (let anchor of anchors) {
-    anchor.addEventListener('click', function(event) {
-        const blokID = anchor.getElementById(id);
-    })
-}
+// for (let anchor of anchors) {
+//     anchor.addEventListener('click', function(event) {
+//         let blokID = document.getElementById('cont')
+       
+//         document.querySelector('' + blokID).scrollIntoView({
+//             behavior: "smooth",
+//             block: "start",
+
+//         })
+//     })
+// }
