@@ -605,6 +605,7 @@ body {
     background-size: cover;
     background-position: 50%;
     display: flex;
+    position: relative;
     @include btnStyle($btn_font_family);
     &__text {
         margin-top: 35px;
@@ -624,4 +625,124 @@ body {
         margin: 0 auto;
         text-align: center;
      }
+}
+
+
+// === maps =====
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+// ==== form ====
+
+.decor {
+    
+    position: absolute;
+    bottom: 70%;
+    max-width: 600px;
+    width: 50%;
+    margin: 50px auto 0;
+    background: linear-gradient(
+        45deg, #805efe, #59b1fe) no-repeat;
+    border-radius: 30px;
+ }
+ .form-left-decoration, .form-right-decoration {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: #59b1fe;
+    border-radius: 20px;
+ }
+ .form-left-decoration {
+    bottom: 60px;
+    left: -30px;
+ }
+ .form-right-decoration {
+    top: 60px;
+    right: -30px;
+ }
+ .form-left-decoration:before, .form-left-decoration:after, .form-right-decoration:before, .form-right-decoration:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    background: #e1e7ec;
+ }
+ .form-left-decoration:before {
+    top: -20px;
+ }
+ .form-left-decoration:after {
+    top: 20px;
+    left: 10px;
+ }
+ .form-right-decoration:before {
+    top: -20px;
+    right: 0;
+ }
+ .form-right-decoration:after {
+    top: 20px;
+    right: 10px;
+ }
+ .circle {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+ }
+ .form-inner {
+    padding: 50px;
+ }
+ .form-inner input, .form-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background: #E9EFF6;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+ }
+ .form-inner input[type="submit"] {
+    margin-top: 30px;
+    background: #805efe;
+    border-bottom: 4px solid #59b1fe;
+    color: white;
+    font-size: 14px;
+ }
+ .form-inner textarea {
+    resize: none;
+ }
+ .form-inner h3 {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 0;
+    @include titleBold($btn_font_family_bold);
+    font-weight: 500;
+    font-size: 24px;
+    color: #5b07f7;
+ }
+
+ .container-form {
+     display: flex;
+ }
+.host {
+    margin-right: 10px;
 }

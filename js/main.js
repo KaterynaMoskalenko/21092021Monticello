@@ -71,3 +71,12 @@ $(document).ready(function(){
   list.addEventListener('click',() => {
     scrollTo(button);
   })
+
+
+  const anchors = document.querySelectorAll('.navigaciya__spicok__item');
+
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function(event) {
+        const blokID = anchor.getElementById(id);
+    })
+}
